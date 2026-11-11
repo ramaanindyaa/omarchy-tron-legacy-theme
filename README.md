@@ -39,11 +39,9 @@ ln -s ~/tron-legacy-theme/variants/tron-legacy-clu ~/.config/omarchy/themes/tron
 omarchy-theme-set tron-legacy        # or: tron-legacy-clu
 ```
 
-> Omarchy does not load `.lua` files, terminal configs, or `vscode.json` from
-> themes installed with `omarchy-theme-install`. That means `hyprland.lua` and
-> `neovim.lua` only take effect with the local symlink install. The base colors
-> still apply from `colors.toml`. The CLU variant is only available through the
-> symlink install.
+> Omarchy generates the Hyprland, Neovim, and terminal configs from
+> `colors.toml`, so every install gets them in Tron colors. The CLU variant is
+> only available through the symlink install.
 
 ### Boot / disk unlock screen (optional, needs sudo)
 
@@ -58,9 +56,7 @@ omarchy-plymouth-set-by-theme tron-legacy
 | File | Purpose |
 |---|---|
 | `colors.toml` | Main palette; source for terminal, Chromium, keyboard colors, etc. |
-| `hyprland.lua` | Cyan gradient borders with a glow on the active window |
 | `shell.*.toml` | Translucent bar; menu, launcher, and notifications with cyan highlights; lock screen goes from cyan to orange on a wrong password |
-| `neovim.lua` | tokyonight re-lit in Tron colors: cyan keywords, amber strings, orange numbers |
 | `vscode-theme.json` | VS Code theme with Tron syntax colors |
 | `btop.theme` | Cyan → orange graphs |
 | `chromium.theme`, `keyboard.rgb`, `icons.theme` | Browser toolbar, keyboard backlight, blue Yaru icons |
