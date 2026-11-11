@@ -29,8 +29,7 @@ From git:
 omarchy-theme-install https://github.com/ramaanindyaa/omarchy-tron-legacy-theme.git
 ```
 
-From a local clone (every file is active, including Neovim, VS Code, and
-Hyprland):
+From a local clone (every file is active, including the VS Code theme):
 
 ```bash
 git clone https://github.com/ramaanindyaa/omarchy-tron-legacy-theme.git ~/tron-legacy-theme
